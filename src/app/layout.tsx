@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Geist_Mono, JetBrains_Mono } from 'next/font/google';
 import { Toaster } from 'sonner';
+import Footer from '../components/common/Footer';
+import Navbar from '../components/common/Navbar';
 import { ThemeProvider } from '../lib/theme-provider';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import './globals.css';
 
 const geistSans = Geist({
@@ -12,6 +16,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
     variable: '--font-geist-mono',
     subsets: ['latin'],
+});
+
+const jetBrainsMono = JetBrains_Mono({
+    variable: '--font-jetbrains-mono',
+    subsets: ['latin'],
+    weight: ['400', '700'],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +37,7 @@ export default function RootLayout({
     return (
         <html lang='en' suppressHydrationWarning={true}>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} ${jetBrainsMono.variable} antialiased`}
             >
                 <ThemeProvider
                     attribute='class'
@@ -36,7 +46,11 @@ export default function RootLayout({
                     disableTransitionOnChange
                 >
                     <main className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
-                        {children}
+                        <Navbar />
+                        <section className='pt-20 px-4 sm:px-6 lg:px-8 max-w-8xl mx-auto'>
+                            {children}
+                        </section>
+                        <Footer />
                         <Toaster position='top-right' richColors />
                     </main>
                 </ThemeProvider>

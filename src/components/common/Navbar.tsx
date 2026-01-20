@@ -1,0 +1,152 @@
+'use client';
+
+import {
+    Briefcase,
+    Code,
+    Home,
+    Mail,
+    Menu,
+    MessageSquare,
+    User,
+    X,
+} from 'lucide-react';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { ModeToggle } from '../mode-toggle';
+
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    // const [activeSection, setActiveSection] = useState('/');
+
+    const navLinks = [
+        { name: 'Home', href: '/', icon: Home },
+        { name: 'Projects', href: '/projects', icon: Briefcase },
+        { name: 'Blog', href: '/blog', icon: MessageSquare },
+        { name: 'About', href: '/about', icon: User },
+    ];
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    return (
+        <nav
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+                scrolled
+                    ? 'bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-lg shadow-blue-500/5'
+                    : 'bg-transparent'
+            }`}
+        >
+            <div className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
+                <div className='flex items-center justify-between h-16'>
+                    {/* Logo */}
+                    <Link
+                        href='/'
+                        className='flex items-center space-x-2 group'
+                    >
+                        <div className='w-9 h-9 bg-linear-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300'>
+                            <Code className='w-5 h-5 text-white animate-pulse' />
+                        </div>
+                        <span className='text-lg font-bold bg-linear-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent hidden sm:block'>
+                            Md Asraful
+                            <br />
+                            <span className='text-sm'>
+                                Full Stack Developer
+                            </span>
+                        </span>
+                    </Link>
+
+                    {/* Desktop Navigation */}
+                    <div className='hidden md:flex items-center space-x-1'>
+                        {navLinks.map((link, index) => {
+                            const Icon = link.icon;
+                            return (
+                                <Link
+                                    key={index}
+                                    href={link.href}
+                                    className='relative px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 group'
+                                >
+                                    <span className='flex items-center space-x-2'>
+                                        <Icon className='w-4 h-4 group-hover:scale-110 transition-transform' />
+                                        <span>{link.name}</span>
+                                    </span>
+                                    <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-blue-500 via-indigo-500 to-purple-600 group-hover:w-full transition-all duration-300'></span>
+                                </Link>
+                            );
+                        })}
+                    </div>
+
+                    {/* Right Section */}
+                    <div className='flex items-center space-x-2'>
+                        {/* Contact Button - Desktop */}
+                        <Link
+                            href='mailto:asraful.devs@gmail.com'
+                            className='hidden md:flex items-center space-x-2 px-4 py-2 text-sm font-medium text-white bg-linear-to-r from-blue-500 via-indigo-500 to-purple-600 rounded-lg hover:from-blue-600 hover:via-indigo-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 group'
+                        >
+                            <Mail className='w-4 h-4 group-hover:rotate-12 transition-transform' />
+                            <span>Contact</span>
+                        </Link>
+
+                        {/* Theme Toggle */}
+                        <ModeToggle />
+
+                        {/* Mobile Menu Button */}
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            className='md:hidden p-2 rounded-lg bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all duration-300'
+                            aria-label='Toggle menu'
+                        >
+                            {isOpen ? (
+                                <X className='w-5 h-5' />
+                            ) : (
+                                <Menu className='w-5 h-5' />
+                            )}
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            {/* Mobile Menu */}
+            <div
+                className={`md:hidden transition-all duration-500 ease-in-out ${
+                    isOpen
+                        ? 'max-h-96 opacity-100'
+                        : 'max-h-0 opacity-0 pointer-events-none'
+                } overflow-hidden`}
+            >
+                <div className='px-4 pt-2 pb-4 space-y-2 bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-gray-200 dark:border-slate-800 shadow-lg'>
+                    {navLinks.map((link, index) => {
+                        const Icon = link.icon;
+                        return (
+                            <Link
+                                key={index}
+                                href={link.href}
+                                onClick={() => setIsOpen(false)}
+                                className='flex items-center space-x-3 px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-300 group'
+                            >
+                                <Icon className='w-5 h-5 group-hover:scale-110 group-hover:rotate-6 transition-transform' />
+                                <span>{link.name}</span>
+                            </Link>
+                        );
+                    })}
+                    <Link
+                        href='mailto:asraful.devs@gmail.com'
+                        onClick={() => setIsOpen(false)}
+                        className='flex items-center justify-center space-x-2 px-4 py-3 text-sm font-medium text-white bg-linear-to-r from-blue-500 via-indigo-500 to-purple-600 rounded-lg hover:from-blue-600 hover:via-indigo-600 hover:to-purple-700 transition-all duration-300 shadow-lg'
+                    >
+                        <Mail className='w-5 h-5' />
+                        <span>Contact Me</span>
+                    </Link>
+                </div>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;

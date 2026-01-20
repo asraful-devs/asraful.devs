@@ -1,0 +1,33 @@
+{
+    "name": "Md Asraful",
+    "email": "asraful.devs@gmail.com",
+    "phone": "+880 1889245756",
+    "address": "Dhaka, Bangladesh",
+    "socialLinks": [
+        {
+            "icon": "Linkedin",
+            "href": "https://www.linkedin.com/in/asraful-devs/",
+            "name": "LinkedIn"
+        },
+        {
+            "icon": "Github",
+            "href": "https://github.com/asraful-devs",
+            "name": "GitHub"
+        },
+        {
+            "icon": "Facebook",
+            "href": "https://www.facebook.com/asraful.devs",
+            "name": "Facebook"
+        },
+        {
+            "icon": "Instagram",
+            "href": "https://www.instagram.com/asraful.devs/",
+            "name": "Instagram"
+        },
+        {
+            "icon": "Youtube",
+            "href": "https://www.youtube.com/@asraful_devs",
+            "name": "YouTube"
+        }
+    ]
+}

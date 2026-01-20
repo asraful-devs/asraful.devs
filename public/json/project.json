@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "ABC",
+        "description": "This is a sample project description.",
+        "image": "/images/sample-project.png",
+        "featured": ["Feature 1", "Feature 2", "Feature 3"],
+        "technologies": ["React", "TypeScript", "Node.js"],
+        "githubLink": "aaaa",
+        "liveLink": "https://example.com/demo",
+        "videoLink": "https://example.com/video",
+        "slideLinks": "sdf"
+    },
+    {
+        "id": 2,
+        "title": "ABC",
+        "description": "This is a sample project description.",
+        "image": "/images/sample-project.png",
+        "featured": ["Feature 1", "Feature 2", "Feature 3"],
+        "technologies": ["React", "TypeScript", "Node.js"],
+        "githubLink": "aaaa",
+        "liveLink": "https://example.com/demo",
+        "videoLink": "https://example.com/video",
+        "slideLinks": "sdf"
+    },
+    {
+        "id": 3,
+        "title": "ABC",
+        "description": "This is a sample project description.",
+        "image": "/images/sample-project.png",
+        "featured": ["Feature 1", "Feature 2", "Feature 3"],
+        "technologies": ["React", "TypeScript", "Node.js"],
+        "githubLink": "aaaa",
+        "liveLink": "https://example.com/demo",
+        "videoLink": "https://example.com/video",
+        "slideLinks": "sdf"
+    },
+    {
+        "id": 4,
+        "title": "ABC",
+        "description": "This is a sample project description.",
+        "image": "/images/sample-project.png",
+        "featured": ["Feature 1", "Feature 2", "Feature 3"],
+        "technologies": ["React", "TypeScript", "Node.js"],
+        "githubLink": "aaaa",
+        "liveLink": "https://example.com/demo",
+        "videoLink": "https://example.com/video",
+        "slideLinks": "sdf"
+    }
+]

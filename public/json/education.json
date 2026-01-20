@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "InstitutionName": "XYZ Institute of Technology",
+        "Degree": "Bachelor of Science in Computer Science",
+        "StartYear": 2015,
+        "EndYear": 2019
+    },
+    {
+        "id": 1,
+        "InstitutionName": "XYZ Institute of Technology",
+        "Degree": "Bachelor of Science in Computer Science",
+        "StartYear": 2015,
+        "EndYear": 2019
+    },
+    {
+        "id": 1,
+        "InstitutionName": "XYZ Institute of Technology",
+        "Degree": "Bachelor of Science in Computer Science",
+        "StartYear": 2015,
+        "EndYear": 2019
+    }
+]
