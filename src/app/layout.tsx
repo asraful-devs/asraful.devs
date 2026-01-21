@@ -45,7 +45,7 @@ export default function RootLayout({
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <main className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8'>
+                    <main className='max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 font-jetbrains'>
                         <Navbar />
                         <section className='pt-20 px-4 sm:px-6 lg:px-8 max-w-8xl mx-auto'>
                             {children}
