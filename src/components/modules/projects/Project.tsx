@@ -1,11 +1,28 @@
 'use client';
 import { ProjectType } from '@/types/projectType';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import data from '../../../../public/json/project.json';
+import Pagination from '../../common/Pagination';
 import ProjectCard from './ProjectCard';
+
+const ITEMS_PER_PAGE = 6;
 
 const Projects = () => {
     const allProjectData: ProjectType[] = data;
+    const [currentPage, setCurrentPage] = useState(1);
+
+    // Calculate pagination
+    const totalPages = Math.ceil(allProjectData.length / ITEMS_PER_PAGE);
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const endIndex = startIndex + ITEMS_PER_PAGE;
+    const currentProjects = allProjectData.slice(startIndex, endIndex);
+
+    const handlePageChange = (page: number) => {
+        setCurrentPage(page);
+        // Scroll to top when page changes
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
         <div className='container mx-auto px-4 py-8'>
@@ -33,15 +50,26 @@ const Projects = () => {
                     </p>
                 </motion.div>
             ) : (
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-                    {allProjectData.map((project, index) => (
-                        <ProjectCard
-                            key={project.id}
-                            project={project}
-                            index={index}
+                <>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12'>
+                        {currentProjects.map((project, index) => (
+                            <ProjectCard
+                                key={project.id}
+                                project={project}
+                                index={index}
+                            />
+                        ))}
+                    </div>
+
+                    {/* Show pagination only if more than 6 projects */}
+                    {allProjectData.length > ITEMS_PER_PAGE && (
+                        <Pagination
+                            currentPage={currentPage}
+                            totalPages={totalPages}
+                            onPageChange={handlePageChange}
                         />
-                    ))}
-                </div>
+                    )}
+                </>
             )}
         </div>
     );
