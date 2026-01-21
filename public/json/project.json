@@ -46,5 +46,41 @@
         "liveLink": "https://example.com/demo",
         "videoLink": "https://example.com/video",
         "slideLinks": "sdf"
+    },
+    {
+        "id": 5,
+        "title": "ABC",
+        "description": "This is a sample project description.",
+        "image": "/images/sample-project.png",
+        "featured": ["Feature 1", "Feature 2", "Feature 3"],
+        "technologies": ["React", "TypeScript", "Node.js"],
+        "githubLink": "aaaa",
+        "liveLink": "https://example.com/demo",
+        "videoLink": "https://example.com/video",
+        "slideLinks": "sdf"
+    },
+    {
+        "id": 6,
+        "title": "ABC",
+        "description": "This is a sample project description.",
+        "image": "/images/sample-project.png",
+        "featured": ["Feature 1", "Feature 2", "Feature 3"],
+        "technologies": ["React", "TypeScript", "Node.js"],
+        "githubLink": "aaaa",
+        "liveLink": "https://example.com/demo",
+        "videoLink": "https://example.com/video",
+        "slideLinks": "sdf"
+    },
+    {
+        "id": 7,
+        "title": "ABC Dj",
+        "description": "This is a sample project description.",
+        "image": "/images/sample-project.png",
+        "featured": ["Feature 1", "Feature 2", "Feature 3"],
+        "technologies": ["React", "TypeScript", "Node.js"],
+        "githubLink": "aaaa",
+        "liveLink": "https://example.com/demo",
+        "videoLink": "https://example.com/video",
+        "slideLinks": "sdf"
     }
 ]
