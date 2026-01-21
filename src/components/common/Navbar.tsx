@@ -1,15 +1,6 @@
 'use client';
 
-import {
-    Briefcase,
-    Code,
-    Home,
-    Mail,
-    Menu,
-    MessageSquare,
-    User,
-    X,
-} from 'lucide-react';
+import { Briefcase, Code, Contact, Home, Menu, User, X } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { ModeToggle } from '../mode-toggle';
@@ -22,8 +13,8 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Home', href: '/', icon: Home },
         { name: 'Projects', href: '/projects', icon: Briefcase },
-        { name: 'Blog', href: '/blog', icon: MessageSquare },
         { name: 'About', href: '/about', icon: User },
+        { name: 'Contact', href: '/contact', icon: Contact },
     ];
 
     useEffect(() => {
@@ -48,18 +39,25 @@ const Navbar = () => {
                     {/* Logo */}
                     <Link
                         href='/'
-                        className='flex items-center space-x-2 group'
+                        className='flex items-center space-x-3 group relative'
                     >
-                        <div className='w-9 h-9 bg-linear-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300'>
-                            <Code className='w-5 h-5 text-white animate-pulse' />
+                        {/* Icon Container with Glow Effect */}
+                        <div className='relative'>
+                            <div className='absolute inset-0 bg-linear-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-lg blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-300'></div>
+                            <div className='relative w-10 h-10 bg-linear-to-br from-blue-500 via-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-300'>
+                                <Code className='w-5 h-5 text-white' />
+                            </div>
                         </div>
-                        <span className='text-lg font-bold bg-linear-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent hidden sm:block'>
-                            Md Asraful
-                            <br />
-                            <span className='text-sm'>
+
+                        {/* Name and Title */}
+                        <div className='hidden sm:flex flex-col'>
+                            <span className='text-lg font-bold bg-linear-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent group-hover:from-blue-500 group-hover:via-indigo-500 group-hover:to-purple-500 transition-all duration-300'>
+                                Md Asraful
+                            </span>
+                            <span className='text-xs font-medium text-gray-600 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300'>
                                 Full Stack Developer
                             </span>
-                        </span>
+                        </div>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -84,15 +82,6 @@ const Navbar = () => {
 
                     {/* Right Section */}
                     <div className='flex items-center space-x-2'>
-                        {/* Contact Button - Desktop */}
-                        <Link
-                            href='mailto:asraful.devs@gmail.com'
-                            className='hidden md:flex items-center space-x-2 px-4 py-2 text-sm font-medium text-white bg-linear-to-r from-blue-500 via-indigo-500 to-purple-600 rounded-lg hover:from-blue-600 hover:via-indigo-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 group'
-                        >
-                            <Mail className='w-4 h-4 group-hover:rotate-12 transition-transform' />
-                            <span>Contact</span>
-                        </Link>
-
                         {/* Theme Toggle */}
                         <ModeToggle />
 
@@ -135,14 +124,6 @@ const Navbar = () => {
                             </Link>
                         );
                     })}
-                    <Link
-                        href='mailto:asraful.devs@gmail.com'
-                        onClick={() => setIsOpen(false)}
-                        className='flex items-center justify-center space-x-2 px-4 py-3 text-sm font-medium text-white bg-linear-to-r from-blue-500 via-indigo-500 to-purple-600 rounded-lg hover:from-blue-600 hover:via-indigo-600 hover:to-purple-700 transition-all duration-300 shadow-lg'
-                    >
-                        <Mail className='w-5 h-5' />
-                        <span>Contact Me</span>
-                    </Link>
                 </div>
             </div>
         </nav>

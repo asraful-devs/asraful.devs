@@ -1,7 +1,9 @@
+import AboutHeroSection from '../../components/modules/about/AboutHeroSection';
+
 const AboutPage = () => {
     return (
         <div className=''>
-            <h2 className=''>about page</h2>
+            <AboutHeroSection />
         </div>
     );
 };
