@@ -1,9 +1,11 @@
-const Skill = () => {
+import Skill from '../../components/modules/skill/skill';
+
+const SkillPage = () => {
     return (
-        <div className=''>
-            <h1>Skills</h1>
+        <div>
+            <Skill />
         </div>
     );
 };
 
-export default Skill;
+export default SkillPage;

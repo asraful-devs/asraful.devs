@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "category": "Frontend",
+        "icon": "code",
+        "skills": [
+            {
+                "name": "JavaScript",
+                "icon": "/icons/javascript.png",
+                "color": "#F7DF1E"
+            },
+            {
+                "name": "TypeScript",
+                "icon": "/icons/typescript.png",
+                "color": "#3178C6"
+            },
+            {
+                "name": "React.js",
+                "icon": "/icons/react.png",
+                "color": "#61DAFB"
+            },
+            {
+                "name": "Next.js",
+                "icon": "/icons/nextjs.png",
+                "color": "#000000"
+            },
+            {
+                "name": "Tailwind CSS",
+                "icon": "/icons/tailwind.png",
+                "color": "#06B6D4"
+            },
+            {
+                "name": "shadcn/ui",
+                "icon": "/icons/shadcn.png",
+                "color": "#000000"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "/icons/bootstrap.png",
+                "color": "#F59E0B"
+            },
+            {
+                "name": "Redux",
+                "icon": "/icons/redux.png",
+                "color": "#EF4444"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category": "Backend",
+        "icon": "database",
+        "skills": [
+            {
+                "name": "Node.js",
+                "icon": "/icons/nodejs.png",
+                "color": "#339933"
+            },
+            {
+                "name": "Express.js",
+                "icon": "/icons/express.png",
+                "color": "#000000"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "/icons/mongodb.png",
+                "color": "#47A248"
+            },
+            {
+                "name": "Mongoose",
+                "icon": "/icons/mongoose.png",
+                "color": "#880000"
+            },
+            {
+                "name": "PostgreSQL",
+                "icon": "/icons/postgresql.png",
+                "color": "#4169E1"
+            },
+            {
+                "name": "Prisma",
+                "icon": "/icons/prisma.png",
+                "color": "#2D3748"
+            },
+            { "name": "JWT", "icon": "/icons/jwt.png", "color": "#EC4A8D" },
+            {
+                "name": "Stripe",
+                "icon": "/icons/stripe.png",
+                "color": "#008CDD"
+            },
+            {
+                "name": "NextAuth.js",
+                "icon": "/icons/nextauth.png",
+                "color": "#4A5568"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "category": "Tools",
+        "icon": "wrench",
+        "skills": [
+            { "name": "Git", "icon": "/icons/git.png", "color": "#F05032" },
+            {
+                "name": "GitHub",
+                "icon": "/icons/github.png",
+                "color": "#181717"
+            },
+            {
+                "name": "VS Code",
+                "icon": "/icons/vscode.png",
+                "color": "#007ACC"
+            },
+            {
+                "name": "Firebase",
+                "icon": "/icons/firebase.png",
+                "color": "#FFCA28"
+            },
+            {
+                "name": "Vercel",
+                "icon": "/icons/vercel.png",
+                "color": "#000000"
+            },
+            {
+                "name": "Postman",
+                "icon": "/icons/postman.png",
+                "color": "#FF6C37"
+            },
+            { "name": "Figma", "icon": "/icons/figma.png", "color": "#A259FF" },
+            {
+                "name": "Trello",
+                "icon": "/icons/trello.png",
+                "color": "#0052CC"
+            },
+            { "name": "Cloud", "icon": "/icons/cloud.png", "color": "#4285F4" }
+        ]
+    }
+]
