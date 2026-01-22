@@ -3,9 +3,21 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import data from '../../../public/json/project.json';
-import { ProjectType } from '../../types/ProjectType';
 import Pagination from '../common/Pagination';
 import ProjectCard from './ProjectCard';
+
+interface ProjectType {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    featured: string[];
+    technologies: string[];
+    githubLink: string;
+    liveLink: string;
+    videoLink?: string;
+    slideLinks?: string;
+}
 
 const ITEMS_PER_PAGE = 6;
 

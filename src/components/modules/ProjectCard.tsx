@@ -4,7 +4,19 @@ import { motion } from 'framer-motion';
 import { ExternalLink, FileText, Github, Video } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
-import { ProjectType } from '../../types/projectType';
+
+interface ProjectType {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    featured: string[];
+    technologies: string[];
+    githubLink: string;
+    liveLink: string;
+    videoLink?: string;
+    slideLinks?: string;
+}
 
 interface ProjectCardProps {
     project: ProjectType;
