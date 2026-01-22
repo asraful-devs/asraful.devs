@@ -83,13 +83,8 @@
             },
             { "name": "JWT", "icon": "/icons/jwt.png", "color": "#EC4A8D" },
             {
-                "name": "Stripe",
-                "icon": "/icons/stripe.png",
-                "color": "#008CDD"
-            },
-            {
                 "name": "NextAuth.js",
-                "icon": "/icons/nextauth.png",
+                "icon": "/icons/next-auth.png",
                 "color": "#4A5568"
             }
         ]
@@ -107,7 +102,7 @@
             },
             {
                 "name": "VS Code",
-                "icon": "/icons/vscode.png",
+                "icon": "/icons/vs-code.png",
                 "color": "#007ACC"
             },
             {
@@ -121,17 +116,16 @@
                 "color": "#000000"
             },
             {
+                "name": "Render",
+                "icon": "/icons/render.png",
+                "color": "#0052CC"
+            },
+            {
                 "name": "Postman",
                 "icon": "/icons/postman.png",
                 "color": "#FF6C37"
             },
-            { "name": "Figma", "icon": "/icons/figma.png", "color": "#A259FF" },
-            {
-                "name": "Trello",
-                "icon": "/icons/trello.png",
-                "color": "#0052CC"
-            },
-            { "name": "Cloud", "icon": "/icons/cloud.png", "color": "#4285F4" }
+            { "name": "Figma", "icon": "/icons/figma.png", "color": "#A259FF" }
         ]
     }
 ]
