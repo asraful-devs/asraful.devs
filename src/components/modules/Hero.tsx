@@ -1,13 +1,13 @@
 import { Code2, Github, Linkedin, Mail, MapPin, Sparkles } from 'lucide-react';
 import Image from 'next/image';
-import about from '../../../../public/json/about.json';
-import { AboutData } from '../../../types/aboutType';
+import hero from '../../../public/json/hero.json';
+import { HeroData } from '../../types/HeroType';
 
-const AboutHeroSection = async () => {
-    const data: AboutData = about;
+const Hero = async () => {
+    const data: HeroData = hero;
 
     return (
-        <section className='relative py-12 sm:py-16 lg:py-24 px-4 overflow-hidden'>
+        <section className='relative py-2 sm:py-4 lg:py-6 px-4 overflow-hidden'>
             {/* Animated Background Elements */}
             <div className='absolute inset-0 -z-10'>
                 <div className='absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse'></div>
@@ -257,4 +257,4 @@ const AboutHeroSection = async () => {
     );
 };
 
-export default AboutHeroSection;
+export default Hero;

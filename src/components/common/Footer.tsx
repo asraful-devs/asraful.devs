@@ -48,10 +48,11 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     const quickLinks = [
-        { name: 'Home', href: '/', icon: User },
-        { name: 'Project', href: '/projects', icon: Briefcase },
-        { name: 'Skill', href: '/skills', icon: Code },
-        { name: 'About', href: '/about', icon: User },
+        { name: 'Home', href: '#home', icon: User },
+        { name: 'Project', href: '#projects', icon: Briefcase },
+        { name: 'Skill', href: '#skills', icon: Code },
+        { name: 'Education', href: '#education', icon: User },
+        { name: 'About', href: '#about', icon: User },
     ];
 
     const handleSubscribe = (e: React.FormEvent) => {

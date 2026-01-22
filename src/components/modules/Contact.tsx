@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import { toast } from 'sonner';
-import contactData from '../../../../public/json/contact.json';
+import contactData from '../../../public/json/contact.json';
 
 interface FormData {
     name: string;

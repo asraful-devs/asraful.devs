@@ -1,9 +1,10 @@
 'use client';
-import { ProjectType } from '@/types/projectType';
+
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import data from '../../../../public/json/project.json';
-import Pagination from '../../common/Pagination';
+import data from '../../../public/json/project.json';
+import { ProjectType } from '../../types/projectType';
+import Pagination from '../common/Pagination';
 import ProjectCard from './ProjectCard';
 
 const ITEMS_PER_PAGE = 6;
@@ -20,20 +21,29 @@ const Projects = () => {
 
     const handlePageChange = (page: number) => {
         setCurrentPage(page);
-        // Scroll to top when page changes
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Smooth scroll to projects section
+        const projectsSection = document.getElementById('projects');
+        if (projectsSection) {
+            projectsSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
     };
 
     return (
         <div className='container mx-auto px-4 py-8'>
-            <motion.h1
-                initial={{ opacity: 0, y: -50, fontSize: '2rem' }}
-                animate={{ opacity: 1, y: 0, fontSize: '2.25rem' }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-                className='text-4xl font-jetbrains font-bold mb-12 text-center bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent'
+            <motion.div
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className='text-center mb-12'
             >
-                All Projects
-            </motion.h1>
+                <h2 className='text-4xl md:text-5xl font-bold mb-4 bg-linear-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent'>
+                    All Projects
+                </h2>
+            </motion.div>
 
             {allProjectData.length === 0 ? (
                 <motion.div
@@ -51,7 +61,13 @@ const Projects = () => {
                 </motion.div>
             ) : (
                 <>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12'>
+                    <motion.div
+                        className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                    >
                         {currentProjects.map((project, index) => (
                             <ProjectCard
                                 key={project.id}
@@ -59,9 +75,9 @@ const Projects = () => {
                                 index={index}
                             />
                         ))}
-                    </div>
+                    </motion.div>
 
-                    {/* Show pagination only if more than 6 projects */}
+                    {/* Show pagination if more than 6 projects */}
                     {allProjectData.length > ITEMS_PER_PAGE && (
                         <Pagination
                             currentPage={currentPage}

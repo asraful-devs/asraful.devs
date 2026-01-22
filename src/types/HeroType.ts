@@ -1,4 +1,4 @@
-export interface AboutData {
+export interface HeroData {
     badge: string;
     name: string;
     title: string;

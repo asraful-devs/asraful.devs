@@ -1,6 +1,15 @@
 'use client';
 
-import { Briefcase, Code, Contact, Home, Menu, User, X } from 'lucide-react';
+import {
+    Award,
+    Briefcase,
+    Code,
+    Contact,
+    Home,
+    Menu,
+    User,
+    X,
+} from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { ModeToggle } from '../mode-toggle';
@@ -11,11 +20,27 @@ const Navbar = () => {
     // const [activeSection, setActiveSection] = useState('/');
 
     const navLinks = [
-        { name: 'Home', href: '/', icon: Home },
-        { name: 'Projects', href: '/projects', icon: Briefcase },
-        { name: 'About', href: '/about', icon: User },
-        { name: 'Contact', href: '/contact', icon: Contact },
+        { name: 'Home', href: '#home', icon: Home },
+        { name: 'Projects', href: '#projects', icon: Briefcase },
+        { name: 'Skills', href: '#skills', icon: Code },
+        { name: 'Education', href: '#education', icon: User },
+        { name: 'Certificates', href: '#certificates', icon: Award },
+        { name: 'Contact', href: '#contact', icon: Contact },
     ];
+
+    const handleNavClick = (
+        e: React.MouseEvent<HTMLAnchorElement>,
+        href: string
+    ) => {
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const element = document.querySelector(href);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                setIsOpen(false);
+            }
+        }
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -65,17 +90,20 @@ const Navbar = () => {
                         {navLinks.map((link, index) => {
                             const Icon = link.icon;
                             return (
-                                <Link
+                                <a
                                     key={index}
                                     href={link.href}
-                                    className='relative px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 group'
+                                    onClick={(e) =>
+                                        handleNavClick(e, link.href)
+                                    }
+                                    className='relative px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 group cursor-pointer'
                                 >
                                     <span className='flex items-center space-x-2'>
                                         <Icon className='w-4 h-4 group-hover:scale-110 transition-transform' />
                                         <span>{link.name}</span>
                                     </span>
                                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-blue-500 via-indigo-500 to-purple-600 group-hover:w-full transition-all duration-300'></span>
-                                </Link>
+                                </a>
                             );
                         })}
                     </div>
@@ -116,8 +144,8 @@ const Navbar = () => {
                             <Link
                                 key={index}
                                 href={link.href}
-                                onClick={() => setIsOpen(false)}
-                                className='flex items-center space-x-3 px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-300 group'
+                                onClick={(e) => handleNavClick(e, link.href)}
+                                className='flex items-center space-x-3 px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-gray-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-300 group cursor-pointer'
                             >
                                 <Icon className='w-5 h-5 group-hover:scale-110 group-hover:rotate-6 transition-transform' />
                                 <span>{link.name}</span>

@@ -3,6 +3,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Smooth scroll padding for fixed navbar */
+html {
+    scroll-padding-top: 5rem;
+}
+
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
