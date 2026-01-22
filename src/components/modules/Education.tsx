@@ -112,12 +112,12 @@ const Education = () => {
 
                                         {/* Degree */}
                                         <h3 className='text-xl font-bold text-gray-900 dark:text-white mb-2'>
-                                            {edu.Degree}
+                                            {edu.InstitutionName}
                                         </h3>
 
                                         {/* Institution */}
                                         <p className='text-gray-700 dark:text-gray-300 font-medium mb-3'>
-                                            {edu.InstitutionName}
+                                            {edu.Degree}
                                         </p>
 
                                         {/* Duration */}

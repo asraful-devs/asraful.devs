@@ -1,14 +1,14 @@
 {
     "badge": "Full Stack Developer & Creator",
     "name": "Md Asraful",
-    "title": "Building Digital Experiences That Connect People",
-    "highlightedWord": "Connect People",
-    "description": "As a solo developer passionate about creating meaningful connections, I built this platform from the ground up to make event organization simple, accessible, and enjoyable for everyone. What started as a personal project has evolved into a thriving community.",
+    "title": "Building Scalable Full-Stack Solutions with Precision.",
+    "highlightedWord": "Precision.",
+    "description": "Passionate Full Stack Web Developer skilled in contemporary web technologies like React, Next.js, and Node.js. Skilled in the development of responsive and user-friendly web apps using TypeScript, MongoDB, and PostgreSQL. Interested in applying innovative skills and personal growth within a vibrant development team.",
     "descriptionHighlight": "simple, accessible, and enjoyable",
     "location": "Dhaka, Bangladesh",
     "status": "Available for Projects",
     "expertise": "MERN Stack Expert",
-    "email": "work.mdasraful56@gmail.com",
+    "email": "asraful.devs@gmail.com",
     "image": "https://i.ibb.co.com/n8RMq7FW/Whats-App-Image-2026-01-21-at-2-38-53-AM.jpg",
     "imageAlt": "Md Asraful - Full Stack Developer",
     "cardInfo": {
@@ -21,7 +21,7 @@
     "socialLinks": [
         {
             "icon": "Mail",
-            "href": "mailto:work.mdasraful56@gmail.com",
+            "href": "mailto:asraful.devs@gmail.com",
             "name": "Get in Touch",
             "type": "primary"
         },

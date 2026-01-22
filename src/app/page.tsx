@@ -1,3 +1,4 @@
+import About from '../components/modules/About';
 import Certificate from '../components/modules/Certificate';
 import Contact from '../components/modules/Contact';
 import Education from '../components/modules/Education';
@@ -22,6 +23,11 @@ const Home = () => {
             {/* Projects Section */}
             <section className='py-16' id='projects'>
                 <Projects />
+            </section>
+
+            {/* About Section */}
+            <section className='py-16' id='about'>
+                <About />
             </section>
 
             {/* Skills Section */}

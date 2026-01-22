@@ -1,0 +1,53 @@
+{
+    "title": "About Me",
+    "subtitle": "Passionate Developer with a Mission",
+    "description": "I'm a dedicated Full Stack Web Developer with expertise in building modern, scalable web applications. My journey in web development started with a passion for creating solutions that make a difference. I specialize in the MERN stack and have a strong foundation in both frontend and backend technologies.",
+    "highlight": "I believe in writing clean, maintainable code and creating user experiences that are both beautiful and functional.",
+    "stats": [
+        {
+            "number": "3+",
+            "label": "Years Experience",
+            "icon": "Trophy"
+        },
+        {
+            "number": "50+",
+            "label": "Projects Completed",
+            "icon": "Briefcase"
+        },
+        {
+            "number": "15+",
+            "label": "Happy Clients",
+            "icon": "Users"
+        },
+        {
+            "number": "100%",
+            "label": "Success Rate",
+            "icon": "Award"
+        }
+    ],
+    "highlights": [
+        {
+            "title": "Full Stack Expertise",
+            "description": "Proficient in React, Next.js, Node.js, Express, MongoDB, and PostgreSQL",
+            "icon": "Code2"
+        },
+        {
+            "title": "Modern Development",
+            "description": "Using latest technologies and best practices to build scalable applications",
+            "icon": "Zap"
+        },
+        {
+            "title": "User-Centric Design",
+            "description": "Creating intuitive interfaces that users love to interact with",
+            "icon": "Heart"
+        },
+        {
+            "title": "Problem Solver",
+            "description": "Analytical approach to solving complex technical challenges",
+            "icon": "Target"
+        }
+    ],
+    "imageUrl": "https://i.ibb.co.com/gMr1VH2n/portfolio.jpg",
+    "resumeUrl": "https://drive.google.com/file/d/1scH9pyWbAXzzqKAbOP1CrNbCWNn_S5Zm/view?usp=drive_link",
+    "resumeFileName": "Md_Asraful_Resume.pdf"
+}

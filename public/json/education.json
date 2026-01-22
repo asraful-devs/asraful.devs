@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "InstitutionName": "XYZ Institute of Technology",
-        "Degree": "Bachelor of Science in Computer Science",
-        "StartYear": 2015,
+        "InstitutionName": "Madaripur Government College",
+        "Degree": "Bachelor of Science in Chemistry",
+        "StartYear": 2024,
         "EndYear": 2019
     },
     {
         "id": 1,
-        "InstitutionName": "XYZ Institute of Technology",
-        "Degree": "Bachelor of Science in Computer Science",
-        "StartYear": 2015,
-        "EndYear": 2019
+        "InstitutionName": "Shariatpur Government College",
+        "Degree": "Higher Secondary Certificate (HSC)",
+        "StartYear": 2021,
+        "EndYear": 2023
     },
     {
         "id": 1,
-        "InstitutionName": "XYZ Institute of Technology",
-        "Degree": "Bachelor of Science in Computer Science",
-        "StartYear": 2015,
-        "EndYear": 2019
+        "InstitutionName": "Charmal Gaon High School",
+        "Degree": "Secondary School Certificate (SSC)",
+        "StartYear": 2016,
+        "EndYear": 2021
     }
 ]

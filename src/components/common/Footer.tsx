@@ -2,10 +2,13 @@
 
 import {
     ArrowUp,
+    Award,
     Briefcase,
     Code,
+    Contact,
     Facebook,
     Github,
+    Home,
     Instagram,
     Link as LinkIcon,
     Linkedin,
@@ -48,11 +51,13 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     const quickLinks = [
-        { name: 'Home', href: '#home', icon: User },
-        { name: 'Project', href: '#projects', icon: Briefcase },
-        { name: 'Skill', href: '#skills', icon: Code },
-        { name: 'Education', href: '#education', icon: User },
+        { name: 'Home', href: '#home', icon: Home },
+        { name: 'Projects', href: '#projects', icon: Briefcase },
         { name: 'About', href: '#about', icon: User },
+        { name: 'Skills', href: '#skills', icon: Code },
+        { name: 'Education', href: '#education', icon: User },
+        { name: 'Certificates', href: '#certificates', icon: Award },
+        { name: 'Contact', href: '#contact', icon: Contact },
     ];
 
     const handleSubscribe = (e: React.FormEvent) => {
