@@ -87,7 +87,7 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className='hidden md:flex items-center space-x-1'>
+                    <div className='hidden lg:flex items-center space-x-1'>
                         {navLinks.map((link, index) => {
                             const Icon = link.icon;
                             return (
@@ -97,10 +97,10 @@ const Navbar = () => {
                                     onClick={(e) =>
                                         handleNavClick(e, link.href)
                                     }
-                                    className='relative px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 group cursor-pointer'
+                                    className='relative px-3 xl:px-4 py-2 text-xs xl:text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 group cursor-pointer'
                                 >
-                                    <span className='flex items-center space-x-2'>
-                                        <Icon className='w-4 h-4 group-hover:scale-110 transition-transform' />
+                                    <span className='flex items-center space-x-1 xl:space-x-2'>
+                                        <Icon className='w-3.5 xl:w-4 h-3.5 xl:h-4 group-hover:scale-110 transition-transform' />
                                         <span>{link.name}</span>
                                     </span>
                                     <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-blue-500 via-indigo-500 to-purple-600 group-hover:w-full transition-all duration-300'></span>
@@ -117,7 +117,7 @@ const Navbar = () => {
                         {/* Mobile Menu Button */}
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className='md:hidden p-2 rounded-lg bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all duration-300'
+                            className='lg:hidden p-2 rounded-lg bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-all duration-300'
                             aria-label='Toggle menu'
                         >
                             {isOpen ? (
@@ -132,7 +132,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div
-                className={`md:hidden transition-all duration-500 ease-in-out ${
+                className={`lg:hidden transition-all duration-500 ease-in-out ${
                     isOpen
                         ? 'max-h-96 opacity-100'
                         : 'max-h-0 opacity-0 pointer-events-none'

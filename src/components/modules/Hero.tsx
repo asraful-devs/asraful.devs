@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin, Sparkles } from 'lucide-react';
+import { Github, Mail, MapPin, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 import hero from '../../../public/json/hero.json';
 
@@ -103,17 +103,6 @@ const Hero = async () => {
                             >
                                 <Github className='w-5 h-5' />
                                 <span className='font-semibold'>GitHub</span>
-                            </a>
-                            <a
-                                href={
-                                    data.socialLinks.find(
-                                        (link) => link.icon === 'Linkedin'
-                                    )?.href
-                                }
-                                target='_blank'
-                                className='flex items-center justify-center w-12 h-12 bg-white dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 text-blue-600 dark:text-blue-400 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 border border-gray-200 dark:border-slate-700'
-                            >
-                                <Linkedin className='w-5 h-5' />
                             </a>
                         </div>
                     </div>
