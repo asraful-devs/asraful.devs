@@ -1,50 +1,96 @@
 [
     {
         "id": 1,
-        "title": "ABC",
-        "description": "This is a sample project description.",
-        "image": "https://www.freepik.com/free-photos-vectors/code",
+        "title": "Never Alone - Frontend",
+        "description": "A modern mental health support platform built with Next.js and TypeScript. Features include user authentication, payment integration with Stripe, state management using Redux Toolkit, and a fully responsive design with Tailwind CSS.",
+        "image": "https://i.ibb.co.com/mC2vN51r/never-Alone-Client.png",
         "featured": ["Feature 1", "Feature 2", "Feature 3"],
-        "technologies": ["React", "TypeScript", "Node.js"],
-        "githubLink": "aaaa",
-        "liveLink": "https://example.com/demo",
-        "videoLink": "https://example.com/video",
-        "slideLinks": "sdf"
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Redux Toolkit",
+            "Tailwind CSS",
+            "Stripe"
+        ],
+        "githubLink": "https://github.com/asraful-devs/Never_Alone_Client",
+        "liveLink": "https://never-alone-client.onrender.com/",
+        "videoLink": "not available",
+        "slideLinks": "not available"
     },
     {
         "id": 2,
-        "title": "ABC",
-        "description": "This is a sample project description.",
-        "image": "https://ibb.co.com/bjy7w271",
+        "title": "Never Alone - Backend",
+        "description": "RESTful API backend for the Never Alone platform developed with Node.js, Express, and TypeScript. Implements secure payment processing with Stripe, PostgreSQL database management, and comprehensive API endpoints for mental health support services.",
+        "image": "",
         "featured": ["Feature 1", "Feature 2", "Feature 3"],
-        "technologies": ["React", "TypeScript", "Node.js"],
-        "githubLink": "aaaa",
-        "liveLink": "https://example.com/demo",
-        "videoLink": "https://example.com/video",
-        "slideLinks": "sdf"
+        "technologies": [
+            "Node.js",
+            "Express",
+            "TypeScript",
+            "Stripe",
+            "PostgreSQL"
+        ],
+        "githubLink": "https://github.com/asraful-devs/Never_Alone_Server",
+        "liveLink": "https://never-alone-server.onrender.com/",
+        "videoLink": "not available",
+        "slideLinks": "not available"
     },
     {
         "id": 3,
-        "title": "ABC",
-        "description": "This is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project descriptionhis is a sample project description.",
-        "image": "https://i.ibb.co.com/Qj9JV75V/59273.jpg",
+        "title": "RideShareX - Frontend",
+        "description": "A comprehensive ride-sharing web application frontend built with React and TypeScript. Features real-time ride booking, user dashboard, Redux Toolkit for efficient state management, and a beautiful responsive UI designed with Tailwind CSS.",
+        "image": "https://i.ibb.co.com/RGT7JcV6/ride.png",
         "featured": ["Feature 1", "Feature 2", "Feature 3"],
-        "technologies": ["React", "TypeScript", "Node.js"],
-        "githubLink": "aaaa",
-        "liveLink": "https://example.com/demo",
-        "videoLink": "https://example.com/video",
-        "slideLinks": "sdf"
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Redux Toolkit",
+            "Tailwind CSS"
+        ],
+        "githubLink": "https://github.com/asraful-devs/RideShareX-Client-Site",
+        "liveLink": "https://ride-share-x-client-site.vercel.app/",
+        "videoLink": "not available",
+        "slideLinks": "not available"
     },
     {
         "id": 4,
-        "title": "ABC",
-        "description": "This is a sample project description.",
-        "image": "/images/sample-project.png",
+        "title": "RideShareX - Backend",
+        "description": "Robust backend API for RideShareX ride-sharing platform using Node.js and Express. Features include JWT authentication, MongoDB database integration, SSL Commerz payment gateway, and secure REST API endpoints for ride management.",
+        "image": "https://i.ibb.co.com/mVvW77rt/ride-Backend.png",
         "featured": ["Feature 1", "Feature 2", "Feature 3"],
-        "technologies": ["React", "TypeScript", "Node.js"],
-        "githubLink": "aaaa",
-        "liveLink": "https://example.com/demo",
-        "videoLink": "https://example.com/video",
-        "slideLinks": "sdf"
+        "technologies": ["Node.js", "Express", "MongoDB", "JWT", "SSL Commerz"],
+        "githubLink": "https://github.com/asraful-devs/RideShareX-Server-Site",
+        "liveLink": "https://ridesharex-server-site.onrender.com/",
+        "videoLink": "not available",
+        "slideLinks": "not available"
+    },
+    {
+        "id": 5,
+        "title": "Library Management Frontend",
+        "description": "A full-featured library management system frontend built with React and TypeScript. Includes book browsing, borrowing system, user management, Redux Toolkit for state handling, and modern UI design with Tailwind CSS for seamless library operations.",
+        "image": "https://i.ibb.co.com/C3zMGd2c/Screenshot-2026-01-23-103849.png",
+        "featured": ["Feature 1", "Feature 2", "Feature 3"],
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Redux Toolkit"
+        ],
+        "githubLink": "https://github.com/asraful-devs/B5-Assignment-4",
+        "liveLink": "https://b5-assignment-4-rho.vercel.app/",
+        "videoLink": "not available",
+        "slideLinks": "not available"
+    },
+    {
+        "id": 6,
+        "title": "Library Management Backend ",
+        "description": "Backend API for library management system developed with Node.js, Express, and TypeScript. Features MongoDB integration with Mongoose ODM, book inventory management, member tracking, borrowing/return operations, and comprehensive RESTful API endpoints.",
+        "image": "https://i.ibb.co.com/XZ4y1GZy/Library-Management-System.webp",
+        "featured": ["Feature 1", "Feature 2", "Feature 3"],
+        "technologies": ["Node.js", "Express", "TypeScript", "Mongoose"],
+        "githubLink": "https://github.com/asraful-devs/B5-Assignment-3",
+        "liveLink": "https://assignment-3-kappa-azure.vercel.app/",
+        "videoLink": "not available",
+        "slideLinks": "not available"
     }
 ]

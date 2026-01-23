@@ -43,6 +43,11 @@
                 "name": "Redux",
                 "icon": "/icons/redux.png",
                 "color": "#EF4444"
+            },
+            {
+                "name": "Framer Motion",
+                "icon": "/icons/framer-motion.png",
+                "color": "#EF4444"
             }
         ]
     },
@@ -86,6 +91,11 @@
                 "name": "NextAuth.js",
                 "icon": "/icons/next-auth.png",
                 "color": "#4A5568"
+            },
+            {
+                "name": "Zod",
+                "icon": "/icons/zod.png",
+                "color": "#4A5568"
             }
         ]
     },
@@ -113,6 +123,11 @@
             {
                 "name": "Vercel",
                 "icon": "/icons/vercel.png",
+                "color": "#000000"
+            },
+            {
+                "name": "Netlify",
+                "icon": "/icons/netlify.png",
                 "color": "#000000"
             },
             {

@@ -3,28 +3,6 @@
     "subtitle": "Passionate Developer with a Mission",
     "description": "I'm a dedicated Full Stack Web Developer with expertise in building modern, scalable web applications. My journey in web development started with a passion for creating solutions that make a difference. I specialize in the MERN stack and have a strong foundation in both frontend and backend technologies.",
     "highlight": "I believe in writing clean, maintainable code and creating user experiences that are both beautiful and functional.",
-    "stats": [
-        {
-            "number": "3+",
-            "label": "Years Experience",
-            "icon": "Trophy"
-        },
-        {
-            "number": "50+",
-            "label": "Projects Completed",
-            "icon": "Briefcase"
-        },
-        {
-            "number": "15+",
-            "label": "Happy Clients",
-            "icon": "Users"
-        },
-        {
-            "number": "100%",
-            "label": "Success Rate",
-            "icon": "Award"
-        }
-    ],
     "highlights": [
         {
             "title": "Full Stack Expertise",

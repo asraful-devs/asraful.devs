@@ -122,6 +122,7 @@ const Contact = () => {
             label: 'Website',
             value: contactData.website,
             color: 'from-orange-500 to-red-500',
+            link: contactData.website,
         },
         {
             icon: Github,
@@ -200,11 +201,11 @@ const Contact = () => {
                                             >
                                                 <Icon className='w-7 h-7 text-white' />
                                             </div>
-                                            <div>
+                                            <div className='overflow-hidden'>
                                                 <h3 className='font-semibold text-gray-900 dark:text-gray-100 mb-1'>
                                                     {info.label}
                                                 </h3>
-                                                <p className='text-sm text-gray-600 dark:text-gray-400 wrap-break-word hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors'>
+                                                <p className='text-sm text-gray-600 dark:text-gray-400 break-all hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors'>
                                                     {info.value}
                                                 </p>
                                             </div>
@@ -216,11 +217,11 @@ const Contact = () => {
                                             >
                                                 <Icon className='w-7 h-7 text-white' />
                                             </div>
-                                            <div>
+                                            <div className='overflow-hidden'>
                                                 <h3 className='font-semibold text-gray-900 dark:text-gray-100 mb-1'>
                                                     {info.label}
                                                 </h3>
-                                                <p className='text-sm text-gray-600 dark:text-gray-400 wrap-break-word'>
+                                                <p className='text-sm text-gray-600 dark:text-gray-400 break-all'>
                                                     {info.value}
                                                 </p>
                                             </div>
