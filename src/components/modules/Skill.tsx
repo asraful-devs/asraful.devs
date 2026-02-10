@@ -5,19 +5,7 @@ import { Code2, Database, Wrench } from 'lucide-react';
 import Image from 'next/image';
 import { JSX, useState } from 'react';
 import data from '../../../public/json/skill.json';
-
-interface Skill {
-    name: string;
-    icon: string;
-    color: string;
-}
-
-interface SkillCategory {
-    id: number;
-    category: string;
-    icon: string;
-    skills: Skill[];
-}
+import type { Skill, SkillCategory } from '../../types/SkillType';
 
 const Skill = () => {
     const skillsData: SkillCategory[] = data;

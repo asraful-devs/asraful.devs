@@ -1,40 +1,13 @@
 import { Github, Mail, MapPin, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 import hero from '../../../public/json/hero.json';
-
-interface HeroData {
-    badge: string;
-    name: string;
-    title: string;
-    highlightedWord: string;
-    description: string;
-    descriptionHighlight: string;
-    location: string;
-    status: string;
-    expertise: string;
-    email: string;
-    image: string;
-    imageAlt: string;
-    cardInfo: {
-        initials: string;
-        fullName: string;
-        badgeText: string;
-        role: string;
-        userCount: string;
-    };
-    socialLinks: Array<{
-        icon: string;
-        href: string;
-        name: string;
-        type: string;
-    }>;
-}
+import type { HeroData } from '../../types/HeroType';
 
 const Hero = async () => {
     const data: HeroData = hero;
 
     return (
-        <section className='relative py-8 sm:py-6 lg:py-12 px-4 overflow-hidden'>
+        <section className='relative md:py-8 sm:py-6 lg:py-12 px-4 overflow-hidden'>
             {/* Animated Background Elements */}
             <div className='absolute inset-0 -z-10'>
                 <div className='absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse'></div>

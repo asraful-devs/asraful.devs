@@ -12,23 +12,7 @@ import {
 import Image from 'next/image';
 import aboutData from '../../../public/json/about.json';
 import hero from '../../../public/json/hero.json';
-
-interface Highlight {
-    title: string;
-    description: string;
-    icon: string;
-}
-
-interface AboutData {
-    title: string;
-    subtitle: string;
-    description: string;
-    highlight: string;
-    highlights: Highlight[];
-    imageUrl: string;
-    resumeUrl: string;
-    resumeFileName: string;
-}
+import type { AboutData } from '../../types/AboutType';
 
 const About = () => {
     const data: AboutData = aboutData;

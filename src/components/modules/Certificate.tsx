@@ -4,11 +4,7 @@ import { motion } from 'framer-motion';
 import { Award, Download, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import certificateData from '../../../public/json/certificate.json';
-
-interface CertificateType {
-    pdf: string;
-    title: string;
-}
+import type { CertificateType } from '../../types/CertificateType';
 
 const Certificate = () => {
     const certificates: CertificateType[] = certificateData;

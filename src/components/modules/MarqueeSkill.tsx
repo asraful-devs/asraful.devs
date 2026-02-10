@@ -7,7 +7,7 @@ const MarqueeSkill = () => {
     const allSkills = skillData.flatMap((category) => category.skills);
 
     return (
-        <div className='mt-16 py-10'>
+        <div className='mt-10 py-10'>
             <Marquee speed={40} gradient={false} pauseOnHover={true}>
                 {allSkills.map((skill, index) => (
                     <div

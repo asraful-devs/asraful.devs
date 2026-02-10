@@ -3,14 +3,7 @@
 import { motion } from 'framer-motion';
 import { Calendar, GraduationCap } from 'lucide-react';
 import data from '../../../public/json/education.json';
-
-interface EducationType {
-    id: number;
-    InstitutionName: string;
-    Degree: string;
-    StartYear: number;
-    EndYear: number;
-}
+import type { EducationType } from '../../types/EducationType';
 
 const Education = () => {
     const allEducationData: EducationType[] = data;

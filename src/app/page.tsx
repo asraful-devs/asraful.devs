@@ -21,32 +21,32 @@ const Home = () => {
             </section>
 
             {/* Projects Section */}
-            <section className='py-16' id='projects'>
+            <section className='py-10' id='projects'>
                 <Projects />
             </section>
 
             {/* About Section */}
-            <section className='py-16' id='about'>
+            <section className='py-10' id='about'>
                 <About />
             </section>
 
             {/* Skills Section */}
-            <section className='py-16' id='skills'>
+            <section className='py-10' id='skills'>
                 <Skill />
             </section>
 
             {/* Education Section */}
-            <section className='py-16' id='education'>
+            <section className='py-10' id='education'>
                 <Education />
             </section>
 
             {/* Certificate Section */}
-            <section className='py-16' id='certificates'>
+            <section className='py-10' id='certificates'>
                 <Certificate />
             </section>
 
             {/* Contact Section */}
-            <section className='py-16' id='contact'>
+            <section className='py-10' id='contact'>
                 <Contact />
             </section>
         </div>
