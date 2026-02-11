@@ -56,13 +56,13 @@ const About = () => {
                     {/* Left Side - Image */}
                     <div className='relative flex justify-center px-4 sm:px-0'>
                         <div className='absolute inset-0 bg-linear-to-br from-orange-400 via-pink-500 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse'></div>
-                        <div className='relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-112.5 lg:h-112.5 rounded-full overflow-hidden shadow-2xl border-4 sm:border-6 md:border-8 border-white dark:border-slate-700 ring-2 sm:ring-4 ring-orange-500/30'>
+                        <div className='relative w-72 h-72 sm:w-96 sm:h-96 md:w-105 md:h-105 lg:w-130 lg:h-130 rounded-full overflow-hidden shadow-2xl border-4 sm:border-6 md:border-8 border-white dark:border-slate-700 ring-2 sm:ring-4 ring-orange-500/30'>
                             <Image
                                 src={data.imageUrl}
                                 alt={heroData.imageAlt}
                                 className='w-full h-full object-cover'
-                                width={450}
-                                height={450}
+                                width={550}
+                                height={550}
                                 priority
                             />
                         </div>

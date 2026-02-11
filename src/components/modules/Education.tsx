@@ -31,14 +31,14 @@ const Education = () => {
     };
 
     return (
-        <div className='min-h-screen py-20 px-4 sm:px-6 lg:px-8'>
+        <div className='py-8 sm:py-10 md:py-14 lg:py-20 px-4 sm:px-6 lg:px-8'>
             <div className='max-w-4xl mx-auto'>
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className='text-center mb-16'
+                    className='text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16'
                 >
                     <h2 className='text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4'>
                         Education

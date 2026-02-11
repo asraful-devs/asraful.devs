@@ -43,14 +43,14 @@ const Skill = () => {
     };
 
     return (
-        <div className='min-h-screen py-10 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900'>
+        <div className='py-6 sm:py-8 md:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900'>
             <div className='max-w-7xl mx-auto'>
                 {/* Section Header */}
                 <motion.div
                     variants={headerVariants}
                     initial='hidden'
                     animate='visible'
-                    className='text-center mb-20'
+                    className='text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20'
                 >
                     <motion.div
                         initial={{ scale: 0 }}

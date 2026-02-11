@@ -24,14 +24,14 @@ const Certificate = () => {
     };
 
     return (
-        <div className='container mx-auto px-4 py-16'>
+        <div className='container mx-auto px-4 py-8 sm:py-10 md:py-12 lg:py-16'>
             {/* Section Header */}
             <motion.div
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className='text-center mb-12'
+                className='text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12'
             >
                 <div className='flex items-center justify-center gap-3 mb-4'>
                     <Award className='w-10 h-10 text-blue-600' />
@@ -47,7 +47,7 @@ const Certificate = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className='text-center py-20'
+                    className='text-center py-8 sm:py-12 md:py-16 lg:py-20'
                 >
                     <p className='text-gray-500 dark:text-gray-400'>
                         No certificates available at the moment.

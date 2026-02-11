@@ -16,37 +16,43 @@ const Home = () => {
             </section>
 
             {/* Marquee Skills Section */}
-            <section className='py-10' id='marquee-skill'>
+            <section
+                className='py-4 sm:py-6 md:py-8 lg:py-10'
+                id='marquee-skill'
+            >
                 <MarqueeSkill />
             </section>
 
             {/* Projects Section */}
-            <section className='py-10' id='projects'>
+            <section className='py-4 sm:py-6 md:py-8 lg:py-10' id='projects'>
                 <Projects />
             </section>
 
             {/* About Section */}
-            <section className='py-10' id='about'>
+            <section className='py-4 sm:py-6 md:py-8 lg:py-10' id='about'>
                 <About />
             </section>
 
             {/* Skills Section */}
-            <section className='py-10' id='skills'>
+            <section className='py-4 sm:py-6 md:py-8 lg:py-10' id='skills'>
                 <Skill />
             </section>
 
             {/* Education Section */}
-            <section className='py-10' id='education'>
+            <section className='py-4 sm:py-6 md:py-8 lg:py-10' id='education'>
                 <Education />
             </section>
 
             {/* Certificate Section */}
-            <section className='py-10' id='certificates'>
+            <section
+                className='py-4 sm:py-6 md:py-8 lg:py-10'
+                id='certificates'
+            >
                 <Certificate />
             </section>
 
             {/* Contact Section */}
-            <section className='py-10' id='contact'>
+            <section className='py-4 sm:py-6 md:py-8 lg:py-10' id='contact'>
                 <Contact />
             </section>
         </div>

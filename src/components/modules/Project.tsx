@@ -32,13 +32,13 @@ const Projects = () => {
     };
 
     return (
-        <div className='container mx-auto px-4 py-8'>
+        <div className='container mx-auto px-4 py-6 sm:py-8 md:py-10 lg:py-12'>
             <motion.div
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className='text-center mb-12'
+                className='text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12'
             >
                 <h2 className='text-4xl md:text-5xl font-bold mb-4 bg-linear-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent'>
                     All Projects
@@ -50,7 +50,7 @@ const Projects = () => {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
-                    className='text-center mt-5 py-20'
+                    className='text-center mt-5 py-8 sm:py-12 md:py-16 lg:py-20'
                 >
                     <p className='text-2xl text-gray-500 dark:text-gray-400'>
                         No projects available at the moment.

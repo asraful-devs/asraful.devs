@@ -141,7 +141,7 @@ const Contact = () => {
     ];
 
     return (
-        <div className='container mx-auto px-4 py-8 max-w-6xl'>
+        <div className='container mx-auto px-4 py-6 sm:py-8 md:py-10 lg:py-12 max-w-6xl'>
             {/* Page Title */}
             <motion.h1
                 initial={{ opacity: 0, y: -30 }}
@@ -156,7 +156,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className='text-center text-gray-600 dark:text-gray-400 mb-12 text-lg'
+                className='text-center text-gray-600 dark:text-gray-400 mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-lg'
             >
                 Have a question or want to work together? Feel free to reach
                 out!
