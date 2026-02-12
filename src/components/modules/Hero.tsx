@@ -1,7 +1,7 @@
+import { HeroData } from '@/types/HeroType';
 import { Github, Mail, MapPin, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 import hero from '../../../public/json/hero.json';
-import { HeroData } from '../../types/HeroType';
 
 const Hero = async () => {
     const data: HeroData = hero;

@@ -1,3 +1,4 @@
+import { AboutData } from '@/types/AboutType';
 import {
     Award,
     Briefcase,
@@ -12,7 +13,6 @@ import {
 import Image from 'next/image';
 import aboutData from '../../../public/json/about.json';
 import hero from '../../../public/json/hero.json';
-import { AboutData } from '../../types/AboutType';
 
 const About = () => {
     const data: AboutData = aboutData;

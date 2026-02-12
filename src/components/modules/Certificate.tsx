@@ -1,10 +1,10 @@
 'use client';
 
+import { CertificateType } from '@/types/CertificateType';
 import { motion } from 'framer-motion';
 import { Award, Download, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import certificateData from '../../../public/json/certificate.json';
-import { CertificateType } from '../../types/CertificateType';
 
 const Certificate = () => {
     const certificates: CertificateType[] = certificateData;

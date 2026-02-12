@@ -1,11 +1,11 @@
 'use client';
 
+import { SkillCategory } from '@/types/SkillType';
 import { motion } from 'framer-motion';
 import { Code2, Database, Wrench } from 'lucide-react';
 import Image from 'next/image';
 import { JSX, useState } from 'react';
 import data from '../../../public/json/skill.json';
-import { SkillCategory } from '../../types/SkillType';
 
 const Skill = () => {
     const skillsData: SkillCategory[] = data;

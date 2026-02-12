@@ -1,10 +1,10 @@
 'use client';
 
+import { ProjectType } from '@/types/ProjectType';
 import { motion } from 'framer-motion';
 import { ExternalLink, FileText, Github, Video } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
-import { ProjectType } from '../../types/ProjectType';
 
 interface ProjectCardProps {
     project: ProjectType;
