@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div className='min-h-screen'>
             {/* Hero Section */}
-            <section className='min-h-screen' id='home'>
+            <section className='py-4 sm:py-6 md:py-8 lg:py-10' id='home'>
                 <Hero />
             </section>
 
