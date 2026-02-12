@@ -12,7 +12,7 @@ import {
 import Image from 'next/image';
 import aboutData from '../../../public/json/about.json';
 import hero from '../../../public/json/hero.json';
-import type { AboutData } from '../../types/AboutType';
+import { AboutData } from '../../types/AboutType';
 
 const About = () => {
     const data: AboutData = aboutData;

@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import data from '../../../public/json/project.json';
-import type { ProjectType } from '../../types/ProjectType';
+import { ProjectType } from '../../types/ProjectType';
 import Pagination from '../common/Pagination';
 import ProjectCard from './ProjectCard';
 
