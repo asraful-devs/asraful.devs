@@ -68,7 +68,7 @@
         "id": 5,
         "title": "Library Management Frontend",
         "description": "A full-featured library management system frontend built with React and TypeScript. Includes book browsing, borrowing system, user management, Redux Toolkit for state handling, and modern UI design with Tailwind CSS for seamless library operations.",
-        "image": "https://i.ibb.co.com/C3zMGd2c/Screenshot-2026-01-23-103849.png",
+        "image": "https://image2url.com/r2/default/images/1770861053020-53d1adbc-6d7b-4357-ad7b-67dd508809c8.png",
         "featured": ["Feature 1", "Feature 2", "Feature 3"],
         "technologies": [
             "React",

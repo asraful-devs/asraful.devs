@@ -20,6 +20,7 @@ const MarqueeSkill = () => {
                                 alt={skill.name}
                                 fill
                                 className='object-contain p-2'
+                                sizes='80px'
                             />
                         </div>
                         <p className='text-sm font-medium text-center text-muted-foreground group-hover:text-foreground transition-colors'>

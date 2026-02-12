@@ -165,9 +165,9 @@ const Skill = () => {
                                                         <Image
                                                             src={skill.icon}
                                                             alt={skill.name}
-                                                            width={48}
-                                                            height={48}
+                                                            fill
                                                             className='object-contain transition-transform duration-300 group-hover/item:scale-110'
+                                                            sizes='48px'
                                                             onError={(e) => {
                                                                 // Fallback to colored placeholder
                                                                 const target =
