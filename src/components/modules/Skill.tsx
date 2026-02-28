@@ -66,10 +66,10 @@ const Skill = () => {
                             Tech Stack
                         </span>
                     </motion.div>
-                    <h2 className='text-5xl md:text-6xl font-black text-gray-900 dark:text-white mb-4 tracking-tight'>
+                    <h2 className='text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 dark:text-white mb-3 sm:mb-4 tracking-tight px-2'>
                         Skills & Technologies
                     </h2>
-                    <p className='text-gray-600 dark:text-gray-400 text-xl max-w-2xl mx-auto'>
+                    <p className='text-gray-600 dark:text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl mx-auto px-4'>
                         Modern tools and frameworks I use to build exceptional
                         digital experiences
                     </p>
@@ -98,24 +98,24 @@ const Skill = () => {
                             className='relative group'
                         >
                             {/* Category Card */}
-                            <div className='bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-xl border border-gray-200 dark:border-gray-800 overflow-hidden hover:shadow-2xl transition-all duration-500'>
+                            <div className='bg-white dark:bg-gray-900 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 shadow-xl border border-gray-200 dark:border-gray-800 overflow-hidden hover:shadow-2xl transition-all duration-500'>
                                 {/* Gradient Background Effect */}
                                 <div className='absolute inset-0 bg-linear-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
 
                                 {/* Category Header */}
-                                <div className='relative flex items-center gap-4 mb-8 pb-6 border-b border-gray-200 dark:border-gray-800'>
+                                <div className='relative flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6 md:mb-8 pb-4 sm:pb-6 border-b border-gray-200 dark:border-gray-800'>
                                     <motion.div
                                         whileHover={{ rotate: 360 }}
                                         transition={{ duration: 0.6 }}
-                                        className='p-4 bg-linear-to-br from-blue-500 to-purple-600 rounded-2xl text-white shadow-lg'
+                                        className='p-2.5 sm:p-3 md:p-4 bg-linear-to-br from-blue-500 to-purple-600 rounded-xl sm:rounded-2xl text-white shadow-lg'
                                     >
                                         {getCategoryIcon(category.icon)}
                                     </motion.div>
                                     <div>
-                                        <h3 className='text-3xl font-bold text-gray-900 dark:text-white'>
+                                        <h3 className='text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white'>
                                             {category.category}
                                         </h3>
-                                        <p className='text-sm text-gray-500 dark:text-gray-400'>
+                                        <p className='text-xs sm:text-sm text-gray-500 dark:text-gray-400'>
                                             {category.skills.length}{' '}
                                             technologies
                                         </p>
@@ -123,7 +123,7 @@ const Skill = () => {
                                 </div>
 
                                 {/* Skills Bento Grid */}
-                                <div className='relative grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-4'>
+                                <div className='relative grid grid-cols-3 xs:grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-9 gap-2 sm:gap-3 md:gap-4'>
                                     {category.skills.map(
                                         (skill, skillIndex) => (
                                             <motion.div
@@ -159,15 +159,15 @@ const Skill = () => {
                                                 }
                                                 className='relative aspect-square'
                                             >
-                                                <div className='w-full h-full bg-linear-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-3 flex flex-col items-center justify-center gap-2 shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-500/50 group/item'>
+                                                <div className='w-full h-full bg-linear-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-lg sm:rounded-xl md:rounded-2xl p-2 sm:p-3 flex flex-col items-center justify-center gap-1 sm:gap-2 shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-500/50 group/item'>
                                                     {/* Icon */}
-                                                    <div className='relative w-12 h-12 flex items-center justify-center'>
+                                                    <div className='relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex items-center justify-center'>
                                                         <Image
                                                             src={skill.icon}
                                                             alt={skill.name}
                                                             fill
                                                             className='object-contain transition-transform duration-300 group-hover/item:scale-110'
-                                                            sizes='48px'
+                                                            sizes='(max-width: 640px) 32px, (max-width: 768px) 40px, 48px'
                                                             onError={(e) => {
                                                                 // Fallback to colored placeholder
                                                                 const target =
@@ -180,7 +180,7 @@ const Skill = () => {
                                                             }}
                                                         />
                                                         <div
-                                                            className='hidden w-12 h-12 rounded-lg items-center justify-center text-white font-bold text-xs'
+                                                            className='hidden w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-lg items-center justify-center text-white font-bold text-[8px] sm:text-[10px] md:text-xs'
                                                             style={{
                                                                 backgroundColor:
                                                                     skill.color,

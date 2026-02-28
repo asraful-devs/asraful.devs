@@ -7,7 +7,7 @@ const Hero = async () => {
     const data: HeroData = hero;
 
     return (
-        <section className='relative md:py-8 sm:py-6 lg:py-12 px-4 overflow-hidden'>
+        <section className='relative py-4 sm:py-6 md:py-8 lg:py-12 px-4 overflow-hidden'>
             {/* Animated Background Elements */}
             <div className='absolute inset-0 -z-10'>
                 <div className='absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse'></div>
@@ -27,15 +27,15 @@ const Hero = async () => {
                         </div>
 
                         {/* Main Heading */}
-                        <div className='space-y-4'>
-                            <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-tight'>
+                        <div className='space-y-3 sm:space-y-4'>
+                            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white leading-tight'>
                                 Hi, I&apos;m{' '}
                                 <span className='text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-purple-600 to-pink-600'>
                                     {data.name}
                                 </span>
                             </h1>
 
-                            <h2 className='text-xl sm:text-2xl lg:text-3xl font-medium text-gray-600 dark:text-gray-400'>
+                            <h2 className='text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium text-gray-600 dark:text-gray-400'>
                                 {data.title}
                             </h2>
                         </div>
@@ -87,11 +87,11 @@ const Hero = async () => {
                             <div className='absolute -inset-8 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur-3xl opacity-20 animate-pulse'></div>
 
                             {/* Main Image Container */}
-                            <div className='relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-700 transform hover:scale-105 transition-transform duration-500'>
+                            <div className='relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-2 sm:border-4 border-white dark:border-slate-700 transform hover:scale-105 transition-transform duration-500'>
                                 <Image
                                     src={data.image}
                                     alt={data.imageAlt}
-                                    className='w-full h-100.5 sm:h-132.5 lg:h-142.5 object-cover'
+                                    className='w-full h-72 sm:h-96 md:h-105 lg:h-125 xl:h-142.5 object-cover'
                                     width={500}
                                     height={550}
                                     priority

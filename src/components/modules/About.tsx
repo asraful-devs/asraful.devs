@@ -55,8 +55,8 @@ const About = () => {
                 <div className='grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center mb-8 sm:mb-10 md:mb-12'>
                     {/* Left Side - Image */}
                     <div className='relative flex justify-center px-4 sm:px-0'>
-                        <div className='absolute inset-0 bg-linear-to-br from-orange-400 via-pink-500 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse'></div>
-                        <div className='relative w-72 h-72 sm:w-96 sm:h-96 md:w-105 md:h-105 lg:w-130 lg:h-130 rounded-full overflow-hidden shadow-2xl border-4 sm:border-6 md:border-8 border-white dark:border-slate-700 ring-2 sm:ring-4 ring-orange-500/30'>
+                        <div className='absolute inset-0 bg-linear-to-br from-orange-400 via-pink-500 to-purple-600 rounded-full blur-3xl opacity-15 sm:opacity-20 animate-pulse'></div>
+                        <div className='relative w-56 h-56 xs:w-64 xs:h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-105 lg:h-105 xl:w-130 xl:h-130 rounded-full overflow-hidden shadow-2xl border-4 sm:border-6 md:border-8 border-white dark:border-slate-700 ring-2 sm:ring-4 ring-orange-500/30'>
                             <Image
                                 src={data.imageUrl}
                                 alt={heroData.imageAlt}
@@ -71,8 +71,8 @@ const About = () => {
                     {/* Right Side - Content */}
                     <div className='space-y-4 sm:space-y-6 px-2 sm:px-0'>
                         {/* Description */}
-                        <div className='space-y-3 sm:space-y-4'>
-                            <p className='text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed'>
+                        <div className='space-y-3 sm:space-y-4 text-center lg:text-left'>
+                            <p className='text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify'>
                                 {data.description}
                             </p>
                             <p className='text-sm sm:text-base md:text-lg font-medium text-gray-900 dark:text-white bg-linear-to-r from-orange-50 to-pink-50 dark:from-slate-800 dark:to-slate-700 p-3 sm:p-4 rounded-lg sm:rounded-xl border-l-4 border-orange-500'>

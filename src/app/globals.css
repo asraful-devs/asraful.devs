@@ -59,6 +59,9 @@ html {
     --radius-2xl: calc(var(--radius) + 8px);
     --radius-3xl: calc(var(--radius) + 12px);
     --radius-4xl: calc(var(--radius) + 16px);
+
+    /* Custom breakpoints for extra small screens */
+    --breakpoint-xs: 375px;
 }
 
 :root {
